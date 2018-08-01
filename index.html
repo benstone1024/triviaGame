@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/style.css" />
+    <script src="Assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+          <h1 class="display-4">SuperHero Trivia</h1>
+          <p class="lead">How much superpower is in your brain.</p>
+        </div>
+      </div>
+      
+      <section>
+        <div id="scoreboard"></div>
+        <form name= "quizlayout" onsubmit="return submitAnswers()" >
+            <h3>1. Who is Batman's second robin? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Dick Greyson&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Jason Todd&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Tim Drake &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Stephanie Brown&gt;<br>
+            
+            <h3>2. What is Superman's real name ? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Kal El&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Val El&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;El Zod&gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;EL Zed&gt;<br>
+
+            <h3>3. Who is the Cyborg? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Benjamin Stone&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Branson Mithchell&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Mike Jones &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Victor Stone&gt;<br>
+
+            <h3>4. Who was the 3rd green lantern? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Guy Gardener&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Alan Scott&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Hal Jordan &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;John Stewart&gt;<br>
+
+            <h3>5. Which Female villian did Batman Propose marriage too? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Harley Quinn&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Posion Ivy&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Cheetah &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Catwomen&gt;<br>
+
+            <h3>6. Who is Aquaman's Nemesis? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;HammerHead&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Black Manta&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Sting Ray &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Arthur Curry&gt;<br>
+
+            <h3>7. What's The name of Teen superhero team? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Teen Titans&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Young Justice&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Extreme Teens &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Junior Justice &gt;<br>
+
+            <h3>8. Who is the most recently appointed Green Latern? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Simon Baz&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;John Stewart&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Alan Scott &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Jessica Cruz&gt;<br>
+
+            <h3>9. What's the name of Batman's secret hide away? </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;The bat lair&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;The fortress&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Bat Justice &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;The Bat Cave&gt;<br>
+
+            <h3>10. The Name of Wonder Woman's Home Land </h3>
+            <input type= "radio" name="q1" value="a" id="q1a">a. &lt;Thailand&gt;<br>
+            <input type= "radio" name="q2" value="b" id="q2a">b. &lt;Ivory Coast&gt;<br>
+            <input type= "radio" name="q3" value="c" id="q3a">c. &lt;Themiscara &gt;<br>
+            <input type= "radio" name="q4" value="d" id="q4a">d. &lt;Isa Isle&gt;<br>
+            <br><br>
+            <input type = "submit" value= "Submit Answers">
+
+           
+
+
+        </form>
+
+
+
+
+
+      </section>
+
+    <footer>
+        <p>Copyright &copy;2014 </p>
+
+
+
+    </footer>
+
+ 
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+</html>
